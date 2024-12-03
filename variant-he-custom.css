@@ -1,0 +1,404 @@
+html{
+	font-family: "Open Sans Hebrew",Arial !important;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+}
+
+*,
+:before,
+:after{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+a:active,
+a:hover,
+a:focus{
+	outline: medium none;
+}
+
+img {
+	vertical-align: middle;
+	border: 0 none;
+}
+
+body{
+    font-family:Arial, sans-serif ;
+    font-size:14px ;
+    color:#333 ;
+	background:#fff ;
+	margin:0; padding:0;
+	direction: rtl;
+	unicode-bidi: embed;
+	transition:all .3s linear; -o-transition:all .3s linear;
+	-moz-transition:all .3s linear;
+	-webkit-transition:all .3s linear;
+}
+
+[hidden]{
+	display:none!important;
+}
+
+form{
+	margin:0; 
+	padding:0; 
+	display:block;
+}
+
+input,
+button,
+select,
+textarea{  
+	font-family:sans-serif;
+	font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+button,
+select{
+	text-transform: none;
+}
+
+.main {
+	width: 100%;
+	height: auto;
+	/* max-width: 380px;  */
+	min-height: 460px; 	
+	margin:0 auto;
+}
+
+.main-content {
+	position:relative;
+	width:100%;
+	margin: 0 auto;
+	padding: 0;
+	overflow-y: auto;
+}
+
+.main-title {
+
+}
+
+.control-value:before,
+.control-value:after,  
+.form-group:before,
+.form-group:after{
+	display: table;
+	content: " ";
+}
+
+.control-value:after, 
+.form-group:after{
+	clear: both;
+}
+
+.form-group {
+	margin-bottom:10px;
+}
+
+#parmxRow.form-group{
+	margin-bottom:4px;
+}
+
+.form-group-submit{
+	margin:10px 0;
+}
+
+.form-group-submit{
+	text-align: right;
+}
+
+.control-label {
+	padding: 0 0 5px 10px;
+	display:block; 
+	position:relative;
+	float: right;
+	color: #444;
+	font-weight: bold;
+	margin-top: 4px;
+}
+
+.control-value {
+	width:75%;
+	padding: 0;
+	float: left;
+}
+
+.form-control {
+    display: block;
+    width: 100%; 
+    height: 24px;
+    padding: 1px 3px;
+    font-size: 12px;
+    line-height: 1.228571429;
+    color: #333;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #808080;
+    border-radius: 1px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.025);
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+select.form-control {
+    height: 20px; 
+	line-height: 20px;
+	padding:1px;
+}
+
+.form-control:focus {
+	color:#000;
+	border-color: #ffa822;	
+	outline: 0 !important;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.095);
+}
+
+#dateContainer select.form-control,
+#dateContainer .dateDelimiter {
+	float:right;
+}
+
+#dateContainer select#month {
+	width: 15%;
+}
+
+#dateContainer select#year {
+	width: 25%;
+	margin-left: 20px;
+}
+
+#dateContainer .dateDelimiter {
+	display:block;
+	width: 8%; 
+	text-align:center;
+	line-height:19px;
+	color: #555; 
+	padding:0;
+	display: none;
+}
+
+#paymentsNoRow .control-value-in {
+	width: 50%; 
+	float:right;
+	margin-left: 10px;
+}
+
+#paymentsNoRow .control-value-add {
+	float:right;
+	color: #898989;
+	font-size: 12px;
+	text-align:right;
+	margin-top: 4px;
+}
+
+#totalRow .control-label{
+	float: right;
+    margin-left: 20px;
+    width: 50%;
+}
+
+#totalRow .control-value{
+	padding: 0;
+    width: auto;
+}
+
+#creditCard,
+#month,
+#year,
+#Id,
+#Cvv2,
+#paymentsNo{
+	direction: ltr;
+	text-align:left;
+	height: 28px;
+}
+
+#cvvRow .control-value{
+width: 65%;
+}
+
+#totalToDisplay {
+	font-weight:600;
+	color: #808080; 
+}
+
+#totalToDisplay strong{
+	font-weight:700;
+}
+
+.btn {
+	display:inline-block;
+	background-color:#ededed;
+	padding:3px 10px;
+	margin-bottom:0;
+	font-size:1em;
+	font-weight:400;
+	line-height:1.428571429;
+	text-align:center; 
+	text-decoration:none;
+	white-space:nowrap;
+	vertical-align:middle;
+	cursor:pointer;
+	border:1px solid transparent;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-o-user-select:one;
+	user-select:none;
+}
+
+.btn-submit strong{
+display: none;
+}
+
+.btn-submit {
+	width:100%;
+	height: 48px;
+	max-width: 200px;
+    border: 1px solid #141a53;
+    font-weight: bold;
+    padding: 15px 0;
+	font-size: 14px;
+	background: #192068 url("../images/pelecard_button.jpg") no-repeat center center;
+}
+
+.btn-submit:hover {
+    border-color: #141a53;
+	background: #141a53 url("../images/pelecard_button_hover.jpg") no-repeat center center !important;
+}
+.btn-submit:focus {
+	background: #141a53;
+	background: -moz-linear-gradient(top,  #141a53 42%, #192068 97%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(42%,#141a53), color-stop(97%,#192068));
+	background: -webkit-linear-gradient(top,  #141a53 42%,#192068 97%);
+	background: -o-linear-gradient(top,  #141a53 42%,#192068 97%);
+	background: -ms-linear-gradient(top,  #141a53 42%,#192068 97%);
+	background: linear-gradient(to bottom,  #141a53 42%,#192068 97%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141a53', endColorstr='#192068',GradientType=0 );
+}
+
+.btn-submit:focus, .btn-submit:active {
+	background: #192068 url("../images/pelecard_button.jpg") no-repeat center center;
+}
+
+
+.ic-p {
+	border: medium none;    
+	display: inline-block;    
+	overflow: hidden;    
+	padding: 0;    
+	text-decoration: none;    
+	vertical-align: middle;
+}
+
+.info-ic { 
+	cursor: pointer;
+	position:absolute;
+	top:0px;
+	right:110px; 
+	width:17px;
+	height:19px;
+	background: url('https://gateway.pelecard.biz/Iframe/Content/Images/info.png') no-repeat 50% 50%;
+}
+.star-ic {
+}
+
+.form-group-sup {
+	border-radius:10px;
+	padding:4px; 
+	text-align:center;
+	display: none;
+}
+
+.form-group-sup-1 {
+	margin: 0 0 7px; 
+	padding-bottom:0;
+}
+
+.form-group-sup .title {
+	margin: 0 0 .01em; 
+	font-size:.92em;
+}
+
+.form-group-sup-in {
+	overflow:hidden;
+}
+
+.form-group-sup-in img{
+	max-width:100%;
+}
+
+.form-group-sup-1  .form-group-sup-in img {
+	float: left; 
+	width: 16%; 
+	margin: 0 2%;
+}
+
+.form-group-sup-2  .form-group-sup-in > div {
+	float: left; 
+	width: 33.33%;  
+	padding:0 8px;
+}
+
+.form-group-sup-2  .form-group-sup-in img {
+	width: 100%;
+}
+
+.info-add-ic,.info-price-ic{
+    display:none;
+}
+
+.dateDelimiter{
+    line-height:20px;
+    padding:0 5% 0 5%;
+}
+
+.warning-group{
+    font-size:14px;
+    color:Red;
+    font-weight:bold;
+    clear:both;
+    padding:5px 0 0 0;
+    text-align: -webkit-center;
+}
+
+.btn-default {
+    max-width: 100%;
+    border: 1px solid #a6a6a6;
+    border-radius: 0;
+    color: #000;
+    font-size: 16px;
+    line-height: 1;
+	padding: 9px 25px;
+}
+
+.btn-default:hover {
+    background-color: #ebebeb;
+    border-color: #adadad;
+    color: #333333;
+}
+
+#cancel{
+	font-size: 12px;
+    margin: 0 auto;
+    padding: 5px 10px;
+	display: none;
+}
+#totalRow{
+	display: none;
+}
+#paymentsNoRow{
+	display: none;
+}
+
+@media only screen 
+and (max-width : 350px) {
+	.control-value {
+		width:100%;
+	}
+	#cvvRow .control-value{
+		width: 100%;
+	}
+}
